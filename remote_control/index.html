@@ -66,6 +66,8 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../docker_ubuntu/">Docker on Linux</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../azure/">AirSim on Azure</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../unreal_custenv/">Custom Unreal Environment</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../Unity/">AirSim with Unity</a>
@@ -83,6 +85,8 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../apis_cpp/">C++ APIs</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../api_docs/html/">API Reference Docs</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../dev_workflow/">Development Workflow</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../settings/">Settings</a>
@@ -95,6 +99,10 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#rc-setup-for-default-config">RC Setup for Default Config</a>
         <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#other-devices">Other Devices</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#note-on-frsky-taranis-x9d-plus">Note on FrSky Taranis X9D Plus</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#note-on-linux">Note on Linux</a>
     </li>
         </ul>
@@ -161,31 +169,43 @@
                     <li class="toctree-l1"><a class="reference internal" href="../hello_drone/">Hello Drone</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">MavLink and PX4</span></p>
+                <p class="caption"><span class="caption-text">External Flight Controllers</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../px4_setup/">PX4 Setup for AirSim</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">MavLink and PX4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../px4_setup/">PX4 Setup for AirSim</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../px4_sitl/">PX4 in SITL</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="https://youtu.be/1oY8Qu5maQQ">AirSim with Pixhawk</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="https://youtu.be/HNWdYrtw3f0">PX4 Setup with AirSim</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="https://www.youtube.com/watch?v=d_FyjKDWQfc&feature=youtu.be">Debugging Attitude Estimation</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="https://github.com/Microsoft/AirSim/wiki/Intercepting-MavLink-messages">Intercepting MavLink Messages</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="https://github.com/Microsoft/AirSim/wiki/Rapid-Descent-on-PX4-drones">Rapid Descent on PX4 Drones</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../px4_build/">Building PX4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../px4_logging/">PX4/MavLink Logging</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../log_viewer/">MavLink LogViewer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mavlinkcom/">MavLinkCom</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mavlinkcom_mocap/">MavLink MoCap</a>
+                </li>
+    </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../px4_sitl/">PX4 in SITL</a>
-                    </li>
-                    <li class="toctree-l1"><a class="" href="https://youtu.be/1oY8Qu5maQQ">AirSim with Pixhawk</a>
-                    </li>
-                    <li class="toctree-l1"><a class="" href="https://youtu.be/HNWdYrtw3f0">PX4 Setup with AirSim</a>
-                    </li>
-                    <li class="toctree-l1"><a class="" href="https://www.youtube.com/watch?v=d_FyjKDWQfc&feature=youtu.be">Debugging Attitude Estimation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="" href="https://github.com/Microsoft/AirSim/wiki/Intercepting-MavLink-messages">Intercepting MavLink Messages</a>
-                    </li>
-                    <li class="toctree-l1"><a class="" href="https://github.com/Microsoft/AirSim/wiki/Rapid-Descent-on-PX4-drones">Rapid Descent on PX4 Drones</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../px4_build/">Building PX4</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../px4_logging/">PX4/MavLink Logging</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../log_viewer/">MavLink LogViewer</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../mavlinkcom/">MavLinkCom</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../mavlinkcom_mocap/">MavLink MoCap</a>
+                    <li class="toctree-l1"><a class="reference internal" href="#">ArduPilot</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="https://ardupilot.org/dev/docs/building-the-code.html">ArduPilot SITL Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="https://ardupilot.org/dev/docs/sitl-with-airsim.html">AirSim & ArduPilot</a>
+                </li>
+    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Upgrading</span></p>
@@ -211,9 +231,11 @@
                     </li>
                     <li class="toctree-l1"><a class="" href="https://github.com/Microsoft/AirSim/wiki/moveOnPath-demo">Moving on Path Demo</a>
                     </li>
-                    <li class="toctree-l1"><a class="" href="https://github.com/Microsoft/AirSim/wiki/Point-Clouds">Building Point Clouds</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../point_clouds/">Building Point Clouds</a>
                     </li>
-                    <li class="toctree-l1"><a class="" href="https://github.com/Microsoft/AirSim/wiki/Implementing-a-Drone-Survey-script">Surveying Using Drone</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../drone_survey/">Surveying Using Drone</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../orbit/">Orbit Trajectory</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Misc</span></p>
@@ -292,9 +314,9 @@
 <h2 id="rc-setup-for-default-config">RC Setup for Default Config<a class="headerlink" href="#rc-setup-for-default-config" title="Permanent link">#</a></h2>
 <p>By default AirSim uses <a href="../simple_flight/">simple_flight</a> as its flight controller which connects to RC via USB port to your computer.</p>
 <p>You can either use XBox controller or <a href="https://hobbyking.com/en_us/frsky-2-4ghz-accst-taranis-x9d-plus-and-x8r-combo-digital-telemetry-radio-system-mode-2.html">FrSky Taranis X9D Plus</a>. Note that XBox 360 controller is not precise enough and is not recommended if you wanted more real world experience. See FAQ below if things are not working.</p>
-<p>### Other Devices
- AirSim can detect large variety of devices however devices other than above <em>might</em> need extra configuration. In future we will add ability to set this config through settings.json. For now, if things are not working then you might want to try workarounds such as <a href="http://www.x360ce.com/">x360ce</a> or change code in <a href="/Unreal/Plugins/AirSim/Source/SimJoyStick/SimJoyStick.cpp#L50">SimJoystick.cpp file</a>.</p>
-<p>### Note on FrSky Taranis X9D Plus</p>
+<h3 id="other-devices">Other Devices<a class="headerlink" href="#other-devices" title="Permanent link">#</a></h3>
+<p>AirSim can detect large variety of devices however devices other than above <em>might</em> need extra configuration. In future we will add ability to set this config through settings.json. For now, if things are not working then you might want to try workarounds such as <a href="http://www.x360ce.com/">x360ce</a> or change code in <a href="/Unreal/Plugins/AirSim/Source/SimJoyStick/SimJoyStick.cpp#L50">SimJoystick.cpp file</a>.</p>
+<h3 id="note-on-frsky-taranis-x9d-plus">Note on FrSky Taranis X9D Plus<a class="headerlink" href="#note-on-frsky-taranis-x9d-plus" title="Permanent link">#</a></h3>
 <p><a href="https://hobbyking.com/en_us/frsky-2-4ghz-accst-taranis-x9d-plus-and-x8r-combo-digital-telemetry-radio-system-mode-2.html">FrSky Taranis X9D Plus</a> is real UAV remote control with an advantage that it has USB port so it can be directly connected to PC. You can <a href="../misc/AirSim_FrSkyTaranis.bin">download AirSim config file</a> and <a href="https://www.youtube.com/watch?v=qe-13Gyb0sw">follow this tutorial</a> to import it in your RC. You should then see "sim" model in RC with all channels configured properly.</p>
 <h3 id="note-on-linux">Note on Linux<a class="headerlink" href="#note-on-linux" title="Permanent link">#</a></h3>
 <p>Currently default config on Linux is for using Xbox controller. This means other devices might not work properly. In future we will add ability to configure RC in settings.json but for now you <em>might</em> have to change  code in <a href="/Unreal/Plugins/AirSim/Source/SimJoyStick/SimJoyStick.cpp#L340">SimJoystick.cpp file</a> to use other devices.</p>
@@ -315,21 +337,19 @@ See <a href="../xbox_controller/">xbox controller</a> for details on how to set 
 <p>Nils Tijtgat wrote an excellent blog on how to get the <a href="https://timebutt.github.io/static/using-a-phantom-dji-controller-in-airsim/">DJI controller working with AirSim</a>.</p>
 <h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">#</a></h2>
 <h4 id="im-using-default-config-and-airsim-says-my-rc-is-not-detected-on-usb">I'm using default config and AirSim says my RC is not detected on USB.<a class="headerlink" href="#im-using-default-config-and-airsim-says-my-rc-is-not-detected-on-usb" title="Permanent link">#</a></h4>
-<p>This typically happens if you have multiple RCs and or XBox/Playstation gamepads etc connected. In Windows, hit Windows+S key and search for "Set up USB Game controllers" (in older versions of Windows try "joystick"). This will show you all game controllers connected to your PC. If you don't see yours than Windows haven't detected it and so you need to first solve that issue. If you do see yours but not at the top of the list (i.e. index 0) than you need to tell AirSim because AirSim by default tries to use RC at index 0. To do this, navigate to your <code>~/Documents/AirSim</code> folder, open up <code>settings.json</code> and add/modify following setting. Below tells AirSim to use RC at index = 2.</p>
-<pre><code>{
-    &quot;SettingsVersion&quot;: 1.2,
-    &quot;SimMode&quot;: &quot;Multirotor&quot;,
-    &quot;Vehicles&quot;: {
-        &quot;SimpleFlight&quot;: {
-            &quot;VehicleType&quot;: &quot;SimpleFlight&quot;,
-            &quot;RC&quot;: {
-              &quot;RemoteControlID&quot;: 2
+<p>This typically happens if you have multiple RCs and or XBox/Playstation gamepads etc connected. In Windows, hit Windows+S key and search for "Set up USB Game controllers" (in older versions of Windows try "joystick"). This will show you all game controllers connected to your PC. If you don't see yours than Windows haven't detected it and so you need to first solve that issue. If you do see yours but not at the top of the list (i.e. index 0) than you need to tell AirSim because AirSim by default tries to use RC at index 0. To do this, navigate to your <code>~/Documents/AirSim</code> folder, open up <code>settings.json</code> and add/modify following setting. Below tells AirSim to use RC at index = 2.
+<pre class="highlight"><code>{
+    "SettingsVersion": 1.2,
+    "SimMode": "Multirotor",
+    "Vehicles": {
+        "SimpleFlight": {
+            "VehicleType": "SimpleFlight",
+            "RC": {
+              "RemoteControlID": 2
             }
         }
     }
-}
-</code></pre>
-
+}</code></pre></p>
 <h4 id="vehicle-seems-unstable-when-using-xboxps3-controller">Vehicle seems unstable when using XBox/PS3 controller<a class="headerlink" href="#vehicle-seems-unstable-when-using-xboxps3-controller" title="Permanent link">#</a></h4>
 <p>Regular gamepads are not very precise and have lot of random noise. Most of the times you may see significant offsets as well (i.e. output is not zero when sticks are at zero). So this behavior is expected.</p>
 <h4 id="where-is-rc-calibration-in-airsim">Where is RC calibration in AirSim?<a class="headerlink" href="#where-is-rc-calibration-in-airsim" title="Permanent link">#</a></h4>
